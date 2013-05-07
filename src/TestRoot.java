@@ -133,23 +133,8 @@ public class TestRoot {
 		assertTrue(Math.abs(solver.solution - 1.362523) <= 0.01);
 	}	
 
-	@Test
-	public void testNevillsMethod() { 
-		ArrayList<Point2D.Double> f = new ArrayList<Point2D.Double>();
-		f.add(new Point2D.Double(1.0, 0.7651977));
-		f.add(new Point2D.Double(1.3, 0.6200860));
-		f.add(new Point2D.Double(1.6, 0.4554022));
-		f.add(new Point2D.Double(1.9, 0.2818186));
-		f.add(new Point2D.Double(2.2, 0.1103623));
-			
-		NevillsMethod aproximator = new NevillsMethod(f, 1.5);
-		aproximator.aprox();
-//		System.out.println(solver);
-//		assertEquals(solver.status, Bisection.SUCCESS);
-//		assertTrue(Math.abs(solver.solution - 1.362523) <= 0.01);
-	}
-	
 	
 }
 
+// TODO : Hermite Interpolation
 // TODO : Cubic spline interpolation after tridiagonal matrix stuff

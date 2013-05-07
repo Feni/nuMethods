@@ -1,3 +1,5 @@
+import java.awt.geom.Point2D;
+import java.util.ArrayList;
 import java.util.concurrent.Callable;
 
 
@@ -21,8 +23,4 @@ abstract class SingleVarEq extends Equation{
 			return 0;
 		}
 	}
-	
-	
 }
-
-

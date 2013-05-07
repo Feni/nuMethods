@@ -28,7 +28,6 @@ public class NevillsMethod {
 //		Q[2][1] = ( ((pt - f.get(1).x) * Q[0][2]) - ((pt - f.get(2).x) * Q[0][1]) ) / (f.get(2).x - f.get(1).x);
 		
 		for(int column = 1; column < f.size(); column++){
-
 			for(int row = column; row < f.size(); row++){
 				double numeratorLeft = ((pt - f.get(row - column).x) * Q[row][column-1]);
 				double numeratorRight = ((pt - f.get(row).x) * Q[row - 1][column-1]);
@@ -41,8 +40,7 @@ public class NevillsMethod {
 				System.out.println("Q"+row+","+column+" = " +Q[row][column]);
 			}
 		}
-		
-		return 0;
+		return Q[f.size()-1][f.size()-1];
 	}
 }
 
