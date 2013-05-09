@@ -1,7 +1,5 @@
+package feni.school.m348;
 import static org.junit.Assert.*;
-
-import java.awt.geom.Point2D;
-import java.util.ArrayList;
 
 import org.junit.Test;
 

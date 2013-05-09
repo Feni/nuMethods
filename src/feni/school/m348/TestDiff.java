@@ -1,5 +1,4 @@
-import static org.junit.Assert.assertTrue;
-
+package feni.school.m348;
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 

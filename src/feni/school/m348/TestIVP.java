@@ -1,3 +1,4 @@
+package feni.school.m348;
 import org.junit.Test;
 
 

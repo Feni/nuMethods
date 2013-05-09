@@ -1,3 +1,4 @@
+package feni.school.m348;
 
 public class Bisection extends SingleVarEqSolver {
 	double startPt, endPt;

@@ -1,3 +1,4 @@
+package feni.school.m348;
 
 public class NewtonsMethod extends SingleVarEqSolver {
 	double initAprox;		// Initial aproximation

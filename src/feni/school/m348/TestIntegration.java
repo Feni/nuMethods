@@ -1,8 +1,4 @@
-import static org.junit.Assert.assertTrue;
-
-import java.awt.geom.Point2D;
-import java.util.ArrayList;
-
+package feni.school.m348;
 import org.junit.Test;
 
 public class TestIntegration {

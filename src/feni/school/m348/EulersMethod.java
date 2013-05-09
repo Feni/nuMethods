@@ -1,3 +1,4 @@
+package feni.school.m348;
 abstract class MultiVarEq{
 	public abstract double at(double t, double y);
 }

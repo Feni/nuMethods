@@ -1,3 +1,4 @@
+package feni.school.m348;
 
 // Solves the problem of finding the roots to equations
 public abstract class EqSolver {
