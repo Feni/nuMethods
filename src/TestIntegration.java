@@ -34,5 +34,32 @@ public class TestIntegration {
 		System.out.println("Integral of cos(x) from 0 to Pi using Simpsons Rule : " + area);
 	}	
 	
+	@Test
+	public void testCompositeSimpsonsRule() {
+		SingleVarEq cosX = new SingleVarEq(){
+			public double at(double pt){
+				return Math.cos(pt);
+			}
+		};
+		// integrate cos(x) from 0 to pi / 2 = 1
+		double area = IntegrationMethods.compositeSimpsonsRule(cosX, 0.0, Math.PI / 2.0, 1000);
+		// Returns 1.0000104719755136 with 100,000 steps (takes 0.002 seconds).   
+		System.out.println("Integral of cos(x) from 0 to Pi using Composite Simpsons Rule : " + area);
+	}
+
+
+	@Test
+	public void testRomberg() {
+		SingleVarEq cosX = new SingleVarEq(){
+			public double at(double pt){
+				return Math.sin(pt);
+			}
+		};
+		double area = IntegrationMethods.romberg(cosX, 0.0, Math.PI, 6);
+		// R6,6 = 2.000000000001321. Exact answer = 2
+		System.out.println("Integral of cos(x) from 0 to Pi using Romberg Rule : " + area);
+	}	
+	
+	
 	
 }
